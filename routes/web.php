@@ -29,6 +29,6 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function(){
 
 Route::middleware(['auth', 'client'])->group(function(){
 
-    Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard.client');
+    Route::get('/home', [HomeController::class, 'index'])->name('dashboard.client');
 
 });
