@@ -10,8 +10,6 @@
 
     <title>{{ config('app.name', 'SAMA KEYITE') }}</title>
 
-
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" />
 
