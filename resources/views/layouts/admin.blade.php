@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'SAMA KEYITE') }}</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" />
+    <link rel="shortcut icon" href="{{ asset('assets/images/sama_keyite.png') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets/css/backend-plugin.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/backend.css?v=1.0.0') }}" />
@@ -36,16 +36,6 @@
         href="{{ asset('assets/vendor/doc-viewer/include/verySimpleImageViewer/css/jquery.verySimpleImageViewer.css') }}" />
     <!--officeToHtml-->
     <link rel="stylesheet" href="{{ asset('assets/vendor/doc-viewer/include/officeToHtml/officeToHtml.css') }}" />
-
-    {{-- <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 </head>
 
 <body>
@@ -58,7 +48,7 @@
         <div class="iq-sidebar sidebar-default">
             <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
                 <a href="index.html" class="header-logo">
-                    <img src="{{asset('assets/images/logo.png')}}" class="img-fluid rounded-normal light-logo" alt="logo" />
+                    <img src="{{asset('assets/images/logo_sk.png')}}" class="img-fluid rounded-normal light-logo" alt="logo" />
                 </a>
                 <div class="iq-menu-bt-sidebar">
                     <i class="las la-bars wrapper-menu"></i>
@@ -424,9 +414,9 @@
                     <div class="iq-navbar-logo d-flex align-items-center justify-content-between">
                         <i class="ri-menu-line wrapper-menu"></i>
                         <a href="index.html" class="header-logo">
-                            <img src="{{asset('assets/images/logo.png')}}" class="img-fluid rounded-normal light-logo"
+                            <img src="{{asset('assets/images/logo_sk.png')}}" class="img-fluid rounded-normal light-logo"
                                 alt="logo" />
-                            <img src="{{asset('assets/images/logo-white.png')}}" class="img-fluid rounded-normal darkmode-logo"
+                            <img src="{{asset('assets/images/logo_sk_blanc.png')}}" class="img-fluid rounded-normal darkmode-logo"
                                 alt="logo" />
                         </a>
                     </div>

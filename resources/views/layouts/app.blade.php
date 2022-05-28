@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'SAMA KEYITE') }}</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" />
+    <link rel="shortcut icon" href="{{ asset('assets/images/sama_keyite.png') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets/css/backend-plugin.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/backend.css?v=1.0.0') }}" />
@@ -58,7 +58,7 @@
         <div class="iq-sidebar sidebar-default">
             <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
                 <a href="index.html" class="header-logo">
-                    <img src="{{asset('assets/images/logo.png')}}" class="img-fluid rounded-normal light-logo" alt="logo" />
+                    <img src="{{asset('assets/images/logo_sk.png')}}" class="img-fluid rounded-normal light-logo" alt="logo" />
                 </a>
                 <div class="iq-menu-bt-sidebar">
                     <i class="las la-bars wrapper-menu"></i>
@@ -68,10 +68,16 @@
                 <nav class="iq-sidebar-menu">
                     <ul id="iq-sidebar-toggle" class="iq-menu">
                         <li class="active">
-                            <a href="../backend/index.html" class="">
+                            <a href="{{route('dashboard.client')}}" class="">
                                 <i class="las la-home iq-arrow-left"></i><span>Dashboard</span>
                             </a>
-                            <ul id="dashboard" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle"></ul>
+                        </li>
+                    </ul>
+                    <ul id="iq-sidebar-toggle" class="iq-menu">
+                        <li>
+                            <a href="#" class="">
+                                <i class="las la-list-alt"></i><span>Traitement Demande</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -84,9 +90,9 @@
                     <div class="iq-navbar-logo d-flex align-items-center justify-content-between">
                         <i class="ri-menu-line wrapper-menu"></i>
                         <a href="index.html" class="header-logo">
-                            <img src="{{asset('assets/images/logo.png')}}" class="img-fluid rounded-normal light-logo"
+                            <img src="{{asset('assets/images/logo_sk.png')}}" class="img-fluid rounded-normal light-logo"
                                 alt="logo" />
-                            <img src="{{asset('assets/images/logo-white.png')}}" class="img-fluid rounded-normal darkmode-logo"
+                            <img src="{{asset('assets/images/logo_sk_blanc.png')}}" class="img-fluid rounded-normal darkmode-logo"
                                 alt="logo" />
                         </a>
                     </div>
