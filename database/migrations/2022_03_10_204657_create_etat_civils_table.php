@@ -15,8 +15,8 @@ class CreateEtatCivilsTable extends Migration
     {
         Schema::create('etat_civils', function (Blueprint $table) {
             $table->id();
-            $table->string('nom_departement_etat_civil')->nullable();
-            $table->integer('departement_id')->unsigned();
+            $table->string('nom_etat_civil')->nullable();
+            $table->integer('commune_id')->unsigned();
             $table->timestamps();
         });
     }

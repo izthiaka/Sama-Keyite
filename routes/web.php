@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Client\ExtraitNaissanceController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -35,4 +36,5 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function(){
 Route::middleware(['auth', 'client'])->group(function(){
 
     Route::get('/home', [HomeController::class, 'index'])->name('dashboard.client');
+    Route::resource('extrait_naissance', ExtraitNaissanceController::class);
 });

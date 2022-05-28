@@ -15,11 +15,11 @@ class EtatCivil extends Model
      * @var array
      */
     protected $fillable = [
-        'nom_departement_etat_civil', 'departement_id'
+        'nom_etat_civil', 'commune_id'
     ];
 
-    public function departement()
+    public function commune()
     {
-        return $this->belongsTo(Departement::class, 'departement_id');
+        return $this->belongsTo(Commune::class, 'commune_id');
     }
 }

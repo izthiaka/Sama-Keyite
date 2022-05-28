@@ -15,6 +15,11 @@ class Departement extends Model
      * @var array
      */
     protected $fillable = [
-        'nom_departement'
+        'nom_departement', 'region_id'
     ];
+
+    public function region()
+    {
+        return $this->belongsTo(Region::class, 'region_id');
+    }
 }

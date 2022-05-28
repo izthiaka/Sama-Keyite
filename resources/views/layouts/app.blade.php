@@ -36,16 +36,7 @@
         href="{{ asset('assets/vendor/doc-viewer/include/verySimpleImageViewer/css/jquery.verySimpleImageViewer.css') }}" />
     <!--officeToHtml-->
     <link rel="stylesheet" href="{{ asset('assets/vendor/doc-viewer/include/officeToHtml/officeToHtml.css') }}" />
-
-    {{-- <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+    @yield('style')
 </head>
 
 <body>
@@ -229,10 +220,10 @@
                 <div class="col-lg-6">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
-                            <a href="../backend/privacy-policy.html">Privacy Policy</a>
+                            <a href="#">Privacy Policy</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="../backend/terms-of-service.html">Terms of Use</a>
+                            <a href="#">Terms of Use</a>
                         </li>
                     </ul>
                 </div>
@@ -243,11 +234,12 @@
                         </script>
                         ©
                     </span>
-                    <a href="#" class="">CloudBOX</a>.
+                    <a href="#" class="">SAMA KEYITE</a>.
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Backend Bundle JavaScript -->
     <script src="{{asset('assets/js/backend-bundle.min.js')}}"></script>
 
@@ -278,6 +270,7 @@
     <script src="{{asset('assets/js/doc-viewer.js')}}"></script>
     <!-- app JavaScript -->
     <script src="{{asset('assets/js/app.js')}}"></script>
+    @yield('script')
 </body>
 
 </html>
